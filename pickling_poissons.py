@@ -13,9 +13,9 @@ def checking(n,l):
       nums={}
     initialised=True
     
-  for i in nums.values():
-    if min(i)>=n>=max(i):
-      return 
+  for i in nums:
+    if min(nums[i])<=n<=max(nums[i]):
+      return i
   temp=po(n)
   nums.update({temp:nums[temp]+[n]})
   f.dump(nums,"pickledump%i"%(l))
