@@ -1,2 +1,2 @@
-# poisson
-are you going to finish that p o i s s o n
+# poisson distribution
+simulation of poisson distributions, cumulative approach
