@@ -24,6 +24,6 @@ po_lice = []
 for i in range(trials):
     po_lice.append(cumulative_compare())
 
-for i in range(max(po_lice)):
+for i in range(max(po_lice) + 1):
     thing = po_lice.count(i)
     print(thing)
