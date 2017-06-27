@@ -13,9 +13,10 @@ def checking(n,l):
       nums={}
     initialised=True
     
-  if n in nums:
-    return nums[n]
+  for i in nums.values():
+    if min(i)>=n>=max(i):
+      return 
   temp=po(n)
-  nums.update({n:temp})
+  nums.update({temp:nums[temp]+[n]})
   f.dump(nums,"pickledump%i"%(l))
   return temp
